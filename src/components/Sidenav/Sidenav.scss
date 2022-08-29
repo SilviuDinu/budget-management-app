@@ -1,0 +1,105 @@
+@import '../../fonts.scss';
+@import '../../styles/grid-breakpoints.scss';
+@import '../../styles/variables.scss';
+
+.menu-item {
+  height: 60px;
+}
+
+.MuiListItemText-root .MuiTypography-root {
+  font-family: 'museo-sans', sans-serif;
+}
+
+.MuiToolbar-root {
+  &.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // .drawer-temporary {
+  //   @media screen and (max-width: #{$sm}) {
+  //     display: block;
+  //   }
+  //   display: none;
+  // }
+
+  // .drawer-permanent {
+  //   @media screen and (min-width: #{$sm}) {
+  //     display: block;
+  //   }
+  //   display: none;
+  // }
+
+  &.header-wrapper {
+    min-height: 64px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid $divider-color;
+    color: #000;
+    .sidenav-button {
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      @media screen and (min-width: #{$xs}) {
+        display: none;
+      }
+    }
+    input {
+      width: 250px;
+    }
+  }
+}
+
+.main-wrapper {
+  display: flex;
+}
+
+.sidenav {
+  display: flex;
+  height: 100vh;
+  overflow-y: initial;
+
+  .menu-item {
+    // color: #818181;
+    color: #000;
+
+    &:hover {
+      color: #111;
+    }
+  }
+
+  .sidenav-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.logo-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+}
+
+header.MuiPaper-root {
+  background-color: #fff;
+  padding: 0 !important;
+}
+
+
+.user-desktop {
+  color: #000;
+  @media screen and (max-width: #{$sm}) {
+    display: none;
+  }
+}
+
+.user-mobile {
+  @media screen and (min-width: #{$sm}) {
+    display: none;
+  }
+}

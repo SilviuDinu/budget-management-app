@@ -1,0 +1,55 @@
+.expense-card-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.expense-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.expense-card-bottom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.expense-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 16px;
+  box-shadow: 0 0 0 0 #0074c9, 0 0.1rem 0.5rem 0 #b3b3b3;
+  width: 25%;
+  border-radius: 10px;
+  height: 48px;
+
+  .delete-icon {
+    color: red;
+  }
+}
+
+.expense-card-info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.expense-card-field {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.expense-card-action {
+  cursor: pointer;
+}
+
+.expense-card {
+  // background-color: #f1f1f1;
+  box-shadow: 0 0 0 0 #0074c9, 0 0.1rem 0.5rem 0 #b3b3b3;
+  padding: 16px;
+  border-radius: 10px;
+  margin-top: 16px;
+}

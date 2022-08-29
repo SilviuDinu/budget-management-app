@@ -1,0 +1,59 @@
+@import '../../styles/grid-breakpoints.scss';
+
+.modal {
+  z-index: 1200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position: relative;
+  padding: 32px;
+  background: white;
+  width: 600px;
+  // max-width: 300px;
+  height: auto;
+  top: 50%;
+  border-radius: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media screen and (max-width: #{$sm}) {
+    width: 90%;
+  }
+
+  .modal-search-actions {
+    .action {
+      margin-left: 16px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .user-search-result {
+    padding: 16px;
+    background-color: #f1f1f1;
+    margin: 8px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .user-search-input {
+    margin: 16px auto;
+  }
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}

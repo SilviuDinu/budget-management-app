@@ -1,0 +1,198 @@
+@import './App.scss';
+@import '../src/components/Sidenav/Sidenav.scss';
+@import '../src/components/ExpenseCategory/ExpenseCategory.scss';
+@import '../src/components/ExpenseCard/ExpenseCard.scss';
+@import '../src/components/ShareExpenseModal/ShareExpenseModal.scss';
+@import '../src/components/DividerWithText/DividerWithText.scss';
+@import '../src/components/RangeInput/RangeInput.scss';
+@import '../src/components/BudgetingControl/BudgetingControl.scss';
+@import '../src/components/ExpenseTypesList/ExpenseTypesList.scss';
+@import '../src/components/CategoriesList/CategoriesList.scss';
+@import './fonts.scss';
+
+// html {
+//   overflow-y: scroll !important;
+// }
+
+* {
+  font-family: 'museo-sans', sans-serif;
+
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'museo-sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll !important;
+  padding: 0 !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h1 {
+  text-align: center;
+  word-break: break-word;
+}
+
+hr {
+  margin: 32px 0;
+}
+
+// @media (prefers-color-scheme: dark) {
+//   .container {
+//     background-color: #242436 !important;
+//     color: #fff;
+//   }
+//   .dashboard-content,
+//   header.MuiPaper-root {
+//     background-color: #242436 !important;
+//   }
+// }
+
+button,
+input[type='text'],
+input[type='password'],
+input[type='date'],
+select {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+  margin: 8px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+hr {
+  width: 100%;
+}
+
+input {
+  border: 1px solid black;
+}
+
+// .bottom-actions {
+//     display: flex;
+//     align-items: center;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+// }
+
+button {
+  border: 1px solid black;
+  cursor: pointer;
+
+  &.btn-like-link {
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    font-family: arial, sans-serif;
+    color: #069;
+    text-decoration: underline;
+    cursor: pointer;
+    border-radius: none;
+    display: inline;
+    font-size: 16px;
+    width: auto;
+    text-align: center;
+
+    &.block {
+      display: block;
+      width: 100%;
+      margin-top: 16px;
+    }
+  }
+}
+
+.login-container,
+.reset-container,
+.signup-container {
+  background-color: white;
+  /* box-shadow: 4px 2px 2px lightgray; */
+  border-radius: 8px;
+  min-width: 375px;
+  max-width: 800px;
+  padding: 32px;
+}
+
+.page-container {
+  display: flex;
+  background: #b92b27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1565c0, #b92b27); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100vh;
+  min-width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container {
+  width: 100%;
+  height: 100%;
+
+  @media screen and (max-width: #{$sm}) {
+    padding: 0px;
+  }
+}
+
+.container {
+  background-color: #fff;
+  height: 100%;
+  padding: 32px;
+  // border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //   flex: 1;
+  //   width: 100%;
+
+  & > label,
+  & > input,
+  & > select {
+    width: 100%;
+  }
+
+  @media screen and (max-width: #{$sm}) {
+    padding: 8px;
+    // width: 100%;
+  }
+}
+
+.success {
+  background-color: #90ee90;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.fail {
+  background-color: #ffcccb;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.main-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard-content {
+  //   @media screen and (min-width: #{$sm}) {
+  //     margin-left: $sidenav-width;
+  //   }
+  background-color: #f1f1f1;
+  margin-top: 64px;
+}

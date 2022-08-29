@@ -1,0 +1,45 @@
+.categories-types-list-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 32px;
+
+  @media screen and (max-width: #{$xs}) {
+    flex-direction: column;
+  }
+}
+
+.categories-types-actions {
+  margin-top: 32px;
+}
+
+.categories-types-list-title {
+  margin: 8px;
+  padding: 8px;
+  flex: 0.3;
+}
+.categories-types-list {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  .categories-type {
+    margin: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .categories-type-title {
+      margin-left: 4px;
+    }
+
+    .categories-type-action {
+      color: #999898;
+    }
+  }
+}
